@@ -1,0 +1,23 @@
+OLIGO            start  len      tm     gc%  any_th  3'_th hairpin   rep seq 
+LEFT PRIMER        175   20   59.02   50.00    0.00   0.00    0.00 11.00 agagtgaagcgacccatgaa
+RIGHT PRIMER       365   20   59.02   50.00    3.32   0.00    0.00 10.00 tctctgtgcatggcctgtaa
+PRODUCT SIZE: 191, PAIR ANY_TH COMPL: 0.00, PAIR 3'_TH COMPL: 0.00
+
+ADDITIONAL OLIGOS
+                    start  len      tm     gc%  any_th  3'_th hairpin   rep seq 
+
+ 1 LEFT PRIMER        346   20   59.02   50.00    5.01   0.00    0.00 10.00 ttacaggccatgcacagaga
+   RIGHT PRIMER       524   20   58.70   50.00    0.00   0.00    0.00 11.00 cttgagtgtgtggctttcgt
+   PRODUCT SIZE: 179, PAIR ANY_TH COMPL: 14.17, PAIR 3'_TH COMPL: 5.45
+
+ 2 LEFT PRIMER        407   20   59.26   50.00    0.00   0.00    0.00 10.00 agatgctgccgaagaattgc
+   RIGHT PRIMER       610   20   58.84   55.00    3.51   0.58    0.00 11.00 gctttgtccagtggctgtag
+   PRODUCT SIZE: 204, PAIR ANY_TH COMPL: 0.00, PAIR 3'_TH COMPL: 0.00
+
+ 3 LEFT PRIMER         52   20   59.24   50.00   13.81   0.00    0.00 12.00 agtccagctgtgcaagagaa
+   RIGHT PRIMER       214   20   59.35   55.00    0.00   0.00    0.00 10.00 gagaccacacgatgaatgcg
+   PRODUCT SIZE: 163, PAIR ANY_TH COMPL: 0.00, PAIR 3'_TH COMPL: 0.00
+
+ 4 LEFT PRIMER        197   20   59.35   55.00    0.00   0.00    0.00 10.00 cattcatcgtgtggtctcgc
+   RIGHT PRIMER       426   20   59.26   50.00    0.00   0.00    0.00 11.00 gcaattcttcggcagcatct
+   PRODUCT SIZE: 230, PAIR ANY_TH COMPL: 0.00, PAIR 3'_TH COMPL: 0.00
