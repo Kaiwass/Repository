@@ -1,0 +1,103 @@
+#Taller 03: Predicción de genes 
+**Nombre: Marena Rein Zamorano, 20.184.860-1**
+**Fecha: 02/09/2021**
+### Formato FASTA/FASTQ
+
+
+**1. ¿El archivo que está descargando está en el formato FASTQ o FASTA? ¿Cuál es la diferencia principal entre los dos? [2]**
+
+[Read](https://raw.githubusercontent.com/Kaiwass/Repository/main/el3.txt)
+
+El archivo esta en formato FASTQ, y la principal diferencia entre FASTA y FASTQ es que este ultimo, ademas de la secuencia de nucleotidos, indica el indice de calidad de la secuenciacion.
+
+**2. ¿Los índices de calidad Phred están codificados en Phred+33 o Phred+64? [2]**
+
+Phred+33 por que aparece el simbolo #.
+
+**3. Copia los primeros 10 símbolos de esta codificación y convierten estos símbolos en índices de calidad Phred (usando el guía visual arriba). Separa cada índice con un espacio. [3]**
+![](https://bioinformaticsworkbook.org/introduction/assets/qualityscore.png)
+
+FFFFFFFFFF
+
+37 37 37 37 37 37 37 37 37 37 (Sanger)
+
+o
+
+38 38 38 38 38 38 38 38 38 38 (Illumina 1.8+)
+                
+----
+                
+----
+### Predicción de genes
+
+**4. ¿Cuántos ORFs o genes encontró ORFfinder?. [1]**
+
+Encontro 7 ORFs [1](https://www.ncbi.nlm.nih.gov/orffinder/)
+
+**5. ¿En qué hebra están codificados?. [2]**
+
+ORF1, ORF2 y ORF3 estan codificados en la hebra +, mientras que ORF4, ORF5, ORF6 y ORF7 estan codificados en la hebra -. [1](https://www.ncbi.nlm.nih.gov/orffinder/)
+
+**6. ¿De qué largo son los ORFs predichos?. [1]**
+
+ORF1: 909 nt
+ORF2: 78 nt
+ORF3: 99 nt
+ORF4: 441 nt 
+ORF5: 405 nt
+ORF6: 84 nt
+ORF7: 144 nt
+[1](https://www.ncbi.nlm.nih.gov/orffinder/)
+
+**7. ¿Algunos de ellos se sobreponen (fíjate en la posición de inicio [start] y término [stop])?. [2]**
+
+Si, se sobreponen ORF4 (1388-948) y ORF6 (1048 - 965) [1](https://www.ncbi.nlm.nih.gov/orffinder/).
+
+**8. ¿Qué tipo de programa es ORFfinder, Ab initio o por homología?. [2]**
+                
+----
+**9. ¿A qué organismo pertenece la secuencia en cuestión?. [2]**
+![](https://raw.githubusercontent.com/Kaiwass/Repository/main/organismo%20secuencia.jpg)
+
+Haemophilus influenzae [2](https://blast.ncbi.nlm.nih.gov/Blast.cgi).
+
+**10. ¿Qué gen(s) está(n) codificados en la secuencia?. [2]**
+
+**fdhE** (Formate dehydrogenase accessory protein FdhE [Haemophilus influenzae]), **riml** (Ribosomal protein S18-alanine N-acetyltransferase [Haemophilus influenzae]) y **holD** (DNA polymerase III subunit psi [Haemophilus influenzae]).
+
+**ORF1: fdhE**
+ORF2: riml
+ORF3: holD
+**ORF4: rimI**
+**ORF5: holD**
+ORF6: riml
+ORF7: fdhE
+
+[2](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+
+**11. Tomando en cuenta la evidencia que acumulaste usando ORFfinder y BLAST. ¿Cuál o cuáles ORFs predichos por ORFfinder dirías tú que son o es el correcto(s)?. [3]**
+
+ORF1, ORF4 y ORF5.
+
+**12. Coloca la o las secuencias de las proteínas que encontraste.(En formato fasta) [2]**
+
+[Secuencias FASTA](https://raw.githubusercontent.com/Kaiwass/Repository/main/Proteinas.txt)
+
+**13. ¿Cual es la función de esa o esas proteínas?. [1]**
+
+Ribosomal protein S18-alanine N-acetyltransferase [Haemophilus influenzae]: Acetila la alanina N-terminal de la proteina ribosomal S18.   
+[3](https://www.uniprot.org/uniprot/P44305)
+
+Formate dehydrogenase accessory protein FdhE [Haemophilus influenzae]: Proteina requerida para la formacion de la forma activa de la formato deshidrogenasa. 
+
+[4](https://www.ncbi.nlm.nih.gov/gene/1176889)
+
+DNA polymerase III subunit psi [Haemophilus influenzae]: La DNA polymerase III  es la enzima responsable de la mayor parte de la sintesis replicativa en bacterias. La funcion exacta de la subunidad psi es desconocida. 
+
+[5](https://www.uniprot.org/uniprot/Q4QPN3)
+
+**14. Según el paper original de la secuenciación del genoma del organismo con el que has trabajado (Fleischmann et al. 1995). ¿Cual es la metodología de secuenciación del genoma?, ¿Que ensamblador utilizaron? y ¿Cuantas regiones codificantes predijeron?. [3]**
+
+La metodologia que utilizaron fue la de Whole-genome shotgun. El ensamblador que utilizaron fue el TIGR ASSEMBLER. Predijeron 1743 regiones codificantes.
+
+[5](https://sci-hub.se/10.1126/science.7542800)
